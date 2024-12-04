@@ -4,76 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alleanne Cathe B. Abuan - Professional Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f1fd; /* Light lavender background */
-            color: #000; /* Black text for better readability */
+            background-color: #f5f5f5;
+            color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #9b7ad7; /* Lavender for header */
+            background-color: #9b7ad7; /* Lavender header */
             color: white;
-            padding: 60px 0;
+            padding: 40px;
             text-align: center;
-            border-bottom: 5px solid #e1e1e1; /* Light border for separation */
+            border-bottom: 4px solid #ddd;
         }
 
         header h1 {
             margin: 0;
-            font-size: 42px;
+            font-size: 38px;
             font-weight: 700;
-            font-family: 'Lora', serif;
         }
 
         header p {
-            margin-top: 10px;
+            margin: 10px 0;
             font-size: 18px;
-            font-weight: 400;
         }
 
         header a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             font-weight: 500;
-            margin: 0 10px;
-            transition: color 0.3s ease;
+            margin: 0 15px;
         }
 
         header a:hover {
-            color: #f1f1f1;
+            text-decoration: underline;
         }
 
         .container {
-            width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px;
             max-width: 1200px;
-            margin: 50px auto;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            flex: 1;
             padding: 20px;
+            max-width: 70%;
+        }
+
+        .sidebar {
+            flex: 1;
+            max-width: 25%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-left: 3px solid #ddd;
         }
 
         .section {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .section h2 {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
-            color: #9b7ad7; /* Lavender for section headings */
+            color: #9b7ad7; /* Lavender for section titles */
             margin-bottom: 15px;
-            border-bottom: 3px solid #9b7ad7;
-            display: inline-block;
-            padding-bottom: 8px;
         }
 
         .section p {
-            font-size: 18px;
-            margin: 10px 0;
-            line-height: 1.7;
-            color: #000; /* Black text for paragraphs */
+            font-size: 16px;
+            margin-bottom: 10px;
         }
 
         .section ul {
@@ -84,7 +92,7 @@
         .section ul li {
             font-size: 16px;
             margin: 10px 0;
-            color: #000; /* Black text for list items */
+            color: #333;
         }
 
         .section ul li strong {
@@ -92,44 +100,45 @@
         }
 
         footer {
-            background-color: #9b7ad7; /* Lavender for footer */
+            background-color: #9b7ad7;
             color: white;
             text-align: center;
             padding: 20px;
             font-size: 16px;
-            position: relative;
         }
 
         footer a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            font-weight: 500;
         }
 
         footer a:hover {
-            color: #f1f1f1;
+            text-decoration: underline;
         }
 
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             header h1 {
-                font-size: 32px;
-            }
-
-            header p {
-                font-size: 16px;
-            }
-
-            .section h2 {
-                font-size: 22px;
-            }
-
-            .section p {
-                font-size: 16px;
+                font-size: 30px;
             }
 
             .container {
-                width: 90%;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .main-content {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .sidebar {
+                max-width: 100%;
+                border-left: none;
+            }
+
+            footer {
+                font-size: 14px;
             }
         }
     </style>
@@ -137,46 +146,63 @@
 <body>
 
     <header>
-        <div class="container">
-            <h1>Alleanne Cathe B. Abuan</h1>
-            <p>UI/UX Designer | QA Specialist</p>
-            <p>0658 Sta. Ana Bulakan, Bulacan</p>
-            <p>
-                <a href="mailto:alleannecatheb.abuan@gmail.com">alleannecatheb.abuan@gmail.com</a> | 
-                <a href="https://www.linkedin.com/in/alleanne-cathe-abuan-399761327/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
+        <h1>Alleanne Cathe B. Abuan</h1>
+        <p>UI/UX Designer | QA Specialist</p>
+        <p>
+            <a href="mailto:alleannecatheb.abuan@gmail.com">alleannecatheb.abuan@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/alleanne-cathe-abuan-399761327/" target="_blank">LinkedIn</a>
+        </p>
     </header>
 
     <div class="container">
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- About Me Section -->
+            <div class="section">
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate UI/UX Designer with a focus on creating beautiful, functional, and user-centered designs. I aim to craft designs that provide real solutions while ensuring an enjoyable user experience. With a strong technical background, I'm committed to constant growth and staying updated with industry trends.
+                </p>
+            </div>
 
-        <!-- About Me Section -->
-        <div class="section">
-            <h2>About Me</h2>
-            <p>
-                Aspiring to become a leading UI/UX designer who creates products that are loved by users and drive business growth through user-centered design principles and innovative solutions. I am committed to continuous learning and professional development, and I am passionate about crafting beautiful, functional, and user-friendly designs.
-            </p>
+            <!-- Skills Section -->
+            <div class="section">
+                <h2>Skills & Expertise</h2>
+                <ul>
+                    <li><strong>Technical Skills:</strong> Figma, Adobe XD, Microsoft Office Suite (Word, PowerPoint, Excel), Programming (HTML, CSS, JavaScript, C#)</li>
+                    <li><strong>Hard Skills:</strong> UX Design (Wireframing, Prototyping, Interaction Design), UI Design (Typography, Color Theory, Visual Design), User Research (Testing, Surveys, Interviews)</li>
+                    <li><strong>Soft Skills:</strong> Communication, Adaptability, Time Management, Problem-Solving, Teamwork</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bachelor of Science in Information Technology</strong> - STI Colleges Balagtas, Bulacan; 2021 – 2025</li>
+                    <li><strong>Science, Technology, Engineering & Mathematics (STEM)</strong> - Dr. Yanga’s Colleges, Philippines; 2019 – 2021</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Skills Section -->
-        <div class="section">
-            <h2>Skills & Expertise</h2>
-            <ul class="skills">
-                <li><strong>Technical Skills:</strong> Figma, Microsoft Office Suite (Word, PowerPoint, Excel), Programming (C#, Java, HTML, CSS)</li>
-                <li><strong>Hard Skills:</strong> UX Design: Wireframing, Prototyping, Interaction Design | UI Design: Visual Design, Typography, Color Theory, Iconography, Layout | User Research: Interviews, Surveys, Testing</li>
-                <li><strong>Soft Skills:</strong> Adaptability, Detail-Oriented, Time Management, Communication, Leadership, Collaboration</li>
-            </ul>
-        </div>
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <!-- Contact Info Section -->
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:alleannecatheb.abuan@gmail.com">alleannecatheb.abuan@gmail.com</a></p>
+            </div>
 
-        <!-- Education Section -->
-        <div class="section">
-            <h2>Education</h2>
-            <ul class="education">
-                <li><strong>Bachelor of Science in Information Technology</strong> - STI Colleges Balagtas, Bulacan; 2021 – 2025</li>
-                <li><strong>Science, Technology, Engineering & Mathematics (STEM)</strong> - Dr. Yanga’s Colleges, Philippines; 2019 – 2021</li>
-            </ul>
+            <!-- Social Media Links Section -->
+            <div class="section">
+                <h2>Follow Me</h2>
+                <p>
+                    <a href="https://www.linkedin.com/in/alleanne-cathe-abuan-399761327/" target="_blank">LinkedIn</a><br>
+                    <!-- You can add other social media links as well -->
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+                </p>
+            </div>
         </div>
-
     </div>
 
     <footer>
